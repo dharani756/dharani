@@ -1,0 +1,93 @@
+// insertion sort
+
+2
+
+3 #include<stdio.h>
+
+4 vold read(int a[],int n){
+
+5 for(int i=0;in;i++){
+
+6
+
+7}
+
+8}
+
+scanf("%d",&a[i]);
+
+9 void swap(int *a, int *b){
+
+10 int temp;
+
+11 temp=*a;
+
+12 *a*b;
+
+13 *b=temp;
+
+14}
+
+15 void sort(int a[],int n){
+
+A
+
+16 int i,j,temp;
+
+17 for(i=1;i<n;i++){
+
+?
+
+18 temp=a[i];
+
+19 j=i-1;
+
+20 while(j>=0&&a[j] temp) {
+
+22222 21
+
+a[j+1]=a[j];
+
+j--;
+
+23 }
+
+24 a[j+1]=temp;
+
+25 }
+
+26}
+
+27 void print(int a[], int n){
+
+28 for(int i=0;i<n;i++){
+
+29 printf("%d",a[i]);
+
+30 }
+
+31}
+
+32 int main()
+
+33 {
+
+34 int n;
+
+35 printf("enter no of elements in array");
+
+36 scanf("%d",&n);
+
+37 int a[n];
+
+38 printf("enter %d elements",n);
+
+39 read(a,n);
+
+40 sort(a,n);
+
+41 print(a,n);
+
+42)
+
+Lenovo
