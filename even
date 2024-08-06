@@ -1,0 +1,17 @@
+l=[]
+n=int(input("enter the no of values: "))
+for i in range(n):
+	ele=int(input("enter the num: "))
+	l.append(ele)
+	
+print(l)
+even=[]
+odd=[]
+for i in range(len(l)):
+	if l[i]%2==0:
+	  even.append(l[i])
+	else:
+	  odd.append(l[i])
+print(even)
+print(odd)
+	  
