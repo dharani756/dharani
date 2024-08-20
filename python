@@ -14,3 +14,29 @@ if (s==s[::-1]):
 else:
 	print("not palindrome")
 
+
+s=input("enter the string")
+count=0
+for i in s:
+	count+=1
+print(count)
+
+
+
+
+s=input("enter the string")
+v,c=0,0
+for i in s:
+	if  i in "aeiouAEIOU":
+	    v+=1
+	else:
+	     c+=1
+print(v)
+print(c)	   
+
+
+ s=input("enter the string").split()
+print(s)
+for i in s:
+	if len(i)%2==0:
+         	print(i)
