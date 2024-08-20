@@ -6,3 +6,11 @@ rev_str=" "
 for i in s:
 	rev_str=i+rev_str
 print(rev_str)
+
+
+s=input("enter the string")
+if (s==s[::-1]):
+	print("palindrome")
+else:
+	print("not palindrome")
+
