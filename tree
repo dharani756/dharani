@@ -1,0 +1,57 @@
+class Node{
+ int key;
+ Node left,right;
+ Node(int key){
+ this.key=key;
+ left=right=null;
+ }
+ public class Main{
+ static Node insert(NOde root,int key){
+ if(root==null){
+ return(new Node(key));
+}
+if(root.key==key){
+return root;
+}
+if(key>root.key){
+root.right=insert(root.right,key);
+}else{
+root.left=insert(root.left,key);
+}
+public static void inorder(Node root){
+if(root==null){
+return;
+}
+inorder(root.left);
+System.out.println(root.key);
+inorder(root.right);
+}
+public static void preorder(Node root){
+if(root==null){
+return;
+}
+System.out.println(root.key);
+preorder(root.left);
+preorder(root.right);
+}
+public static void postorder(Node root){
+if(root==null){
+return;
+}
+postorder(root.left);
+postorder(root.right);
+System.out.println(root.key);
+}
+static Node del(NOde root,int key){
+ if(root==null){
+ return root;
+}
+if(key<root.key){
+root.left=insert(root.left,key);
+}
+if(key>root.key){
+root.right=insert(root.right,key);
+}else{
+if(root.left==null){
+return root.right;
+}else if(root.r
