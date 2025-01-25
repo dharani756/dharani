@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+2 
+
+3 public class MergeSort {
+
+4 
+
+5 private static int[] b;
+
+6 
+
+7 public static void mergeSort(int[] a, int low, int high) {
+
+8 if (low < high) {
+
+9 int mid = (low + high) / 2;
+
+10 mergeSort(a, low, mid);
+
+11 mergeSort(a, mid + 1, high);
+
+12 merge(a, low, mid, high);
+
+13 }
+
+14 }
+
+15 
+
+16 public static void merge(int[] a, int low, int mid, int high) {
+
+17 int i = low, j = mid + 1, k = low;
+
+18 
+
+19 while (i <= mid && j <= high)
+
+20 if (a[i]<=a[j])
+
+21 b[k++] = a[i++];
+
+22 else
+
+23 b[k++] = a[j++];
+
+24 
+
+25 // Copy remaining elements from the left subset
+
+26 while (i <= mid)
+
+27 b[k++] = a[i++];
+
+28 while (j <= high)
+
+29 b[k++] = a[j++];
+
+30 
+
+31 for (int h = low; h <= high; h++)
+
+32 a[h] = b[h];
+
+33 }
+
+34 
+
+35 // Main method to test MergeSort
+
+36 public static void main(String[] args) {
+
+37 Scanner scanner = new Scanner(System.in);
+
+38 
+
+39 System.out.println("Enter the number of elements in the array:");
+
+40 int n = scanner.nextInt();
+
+41 int[] array = new int[n];
+
+42 b = new int[n];
+
+43 
+
+44 System.out.println("Enter the elements of the array:");
