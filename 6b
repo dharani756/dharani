@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal and External JavaScript Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="writetodocument()">Write to document</button>
+    <button onclick="logtoConsole()">Log to console</button>
+    <button onclick="updateInnerHTML()">Update Inner HTML</button>
+    <p id="output"></p>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function updateInnerHTML() {
+            document.getElementById("output").innerHTML = "This text is updated using innerHTML";
+        }
+        
+        function logtoConsole() {
+            console.log("This text is updated using log to console");
+        }
+        
+        function writetodocument() {
+            document.write("This text is updated using writetodocument");
+        }
+        
+        function showAlert() {
+            alert("This text is updated using showalert");
+        }
+    </script>
+</body>
+</html>
