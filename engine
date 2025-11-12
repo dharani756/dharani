@@ -1,0 +1,47 @@
+const express = require('express');
+const app = express();
+const PORT = 3000;
+app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+const data = { title: 'Home Page', message: 'Welcome to EJS Exam res.render('sample', data); // Render the 'index.ejs' template });
+app.listen(PORT, () => {
+console.log('Server running at http://localhost: ${PORT}'); });
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+</head>
+<body>
+<h1><%= message %></h1>
+<p>This page is rendered using the <b>EJS</b> templating engine.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+import React, {useState from "react";
+function Counter() {
+const [count, setCount] = useState(0);
+return (
+<div style={{ textAlign: "center", marginTop: "50px" }}>
+<h2>Counter Example using Hooks</h2>
+<p>Current count: {count}</p>
+<button onClick=(() => setCount(count +1)}>
+Increase
+</button>
+</div>
+);
+export default Counter;
+
+npx create-react-app geetha
+cd geetha
+npm start
